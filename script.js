@@ -1,6 +1,6 @@
 var player = 1; // numéro du joueur dont c'est le tour
-var column = 5;
-var row = 5;
+var column = 7;
+var row = 6;
 var game = true; // jeu en cours
 var text = "";
 var board = new Array();
@@ -17,7 +17,7 @@ function newGame() {
     }
   }
   this.player=1;
-  showAdText("Démarrage du jeu. Le joueur " + playerName(this.player) + " commence.");
+  showAdText("Démarrage du jeu : " + "<br>" + " Le joueur " + playerName(this.player) + " commence.");
   this.game = true;
   createTable();
 }
@@ -28,9 +28,9 @@ function showAdText(text) {
 
 function playerName(numPlayer) {
   if (numPlayer == 1){
-    return "red";
+    return "ALIZARIN";
   } else {
-    return "blue";
+    return "TURBO";
   }
 }
 
